@@ -1,20 +1,33 @@
 #include <stdio.h>
 
+typedef struct input{
+    int imp; // 단위 N*s
+    int acc; // 단위 m/s^2
+    int av; // 단위 rpm
+    int tmp; // 단위 c
+    int smd; // 단위 m/s
+    int mass; // 단위 kg
+} input;
+
 int main() {
-    //압출력 형식
-    int num[10];
-    char data[10][10];
+    int imp, acc, av, tmp, smd, mass;
+    
+    imp = 20;
+    acc = 1;
+    av = 250;
+    tmp = 25;
+    smd = 1;
+    mass = 2;
 
-    for(int i=0; i<10; i++) {
-        printf("\n%d번 째 숫자를 입력해주세요 : ", i+1);
-        scanf("%d", &num[i]);
-
-        printf("%d번 째 문자열을 입력해주세요 : ", i+1);
-        scanf("%s", data[i]);
-    }
-    for(int i=0; i<10; i++) {
-        printf("%d번 째 숫자는 %d\n", i+1, num[i]);
-        printf("%d번 째 문자열은 %s\n\n", i+1, data[i]);
-    }
+    // int input[] = {imp, acc, av, tmp, smd}; // 배열의 경우
+    input input = {imp, acc, av, tmp, smd, mass}; // 구조체의 경우
 }
 
+// 입력데이터
+void function(input* input) {
+    input->
+}
+
+void output() {
+    
+}
