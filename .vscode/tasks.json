@@ -3,13 +3,12 @@
         {
             "type": "cppbuild",
             "label": "C/C++: gcc 활성 파일 빌드",
-            "command": "/usr/bin/gcc",
+            "command": "gcc",
             "args": [
-                "-fdiagnostics-color=always",
-                "-g",
-                "${file}",
-                "-o",
-                "${fileDirname}/${fileBasenameNoExtension}"
+                "pkg-config",
+                "--libs",
+                "--cflags",
+                "gtkmm-3.0`",
             ],
             "options": {
                 "cwd": "${fileDirname}"

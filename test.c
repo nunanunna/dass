@@ -1,8 +1,7 @@
 
-
-// case of struct
 #include <stdio.h>
- enum {
+// case of struct
+enum {
     MARGIN = 1
 };
  typedef struct InputData {
